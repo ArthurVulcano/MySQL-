@@ -1,8 +1,8 @@
 Atividade 1:
 
-SELECT OrderDetailID AS 'OrdemDetalhada' 
+SELECT OrderDetailID AS 'OrdemDetalhada',
 		    ProductID AS 'ProdutoID', 
-            Quantity AS 'Quantidade', 
+            Quantity AS 'Quantidade'
 FROM OrderDetails
 WHERE Quantity > 15 
 AND ProductID > 10
