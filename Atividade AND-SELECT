@@ -246,3 +246,291 @@ FROM OrderDetails
 WHERE OrderDetailID > 400
 AND OrderID%5 = 0
 ORDER BY Quantity ASC;
+
+atividade 26:
+
+SELECT ProductID AS 'IDProduto',
+				Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+FROM OrderDetails
+WHERE Quantity < 10
+AND OrderID > 50
+ORDER BY ProductID;
+
+Atividade 27:
+
+
+SELECT  orderDetailID AS 'OrdemDetalhadaID',
+						ProductID AS 'IDProduto',
+								OrderID AS 'OrdemID'
+FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 20
+AND OrderID LIKE '%7'
+ORDER BY OrderDetailID ASC;
+
+Atividade 28:
+
+SELECT ProductID AS 'IDProduto',
+				orderID AS 'OrdemID',
+					Quantity AS 'Quantidade'
+FROM OrderDetails
+WHERE OrderID < 200
+AND Quantity > 25
+ORDER BY ProductID ASC;
+
+Atividade 29:
+
+SELECT OrderID AS 'OrdemID',
+			 ProductID AS 'IDProduto',
+						Quantity AS 'Quantidade'
+FROM OrderDetails
+WHERE ProductID%9 = 0
+AND Quantity BETWEEN 10 AND 20
+ORDER BY OrderID ASC;
+
+Atividade 30:
+SELECT  OrderDetailID AS 'OrdemDetalhadaID',
+				Quantity AS 'Quantidade',
+						ProductID AS 'IDProduto'
+FROM OrderDetails
+WHERE Quantity > 50
+AND ProductID < 30
+ORDER BY OrderDetailID ASC;
+
+Atividade 31:
+
+SELECT  Quantity AS 'Quantidade',
+				OrderID AS 'OrdemID',
+						OrderDetailID AS 'OrdemDetalhadaID'
+				
+FROM OrderDetails
+WHERE OrderDetailID%4 = 0
+AND OrderID < 300
+ORDER BY Quantity ASC;
+
+Atividade 32:
+
+SELECT ProductID AS 'IDProduto',
+				OrderID AS 'OrdemID',
+						Quantity AS 'Quantidade'
+				
+FROM OrderDetails
+WHERE Quantity < 5
+AND OrderID BETWEEN 10 AND 100
+ORDER BY ProductID ASC;
+
+Atividade 33:
+
+SELECT  Quantity AS 'Quantidade',
+				ProductID AS 'IDProduto',
+						OrderID AS 'OrdemID'
+				
+FROM OrderDetails
+WHERE ProductID > 15
+AND OrderID LIKE '%2'
+ORDER BY Quantity ASC;
+
+Atividade 34:
+
+SELECT  OrderID AS 'OrdemID',
+				OrderDetailID AS 'OrdemDetalhadaID',
+						    Quantity AS 'Quantidade'
+				
+FROM OrderDetails
+WHERE Quantity < 12
+AND OrderDetailID > 150
+ORDER BY OrderID ASC;
+
+Atividade 35:
+
+SELECT Quantity AS 'Quantidade',
+				ProductID AS 'IDProduto'
+						  
+				
+FROM OrderDetails
+WHERE ProductID BETWEEN 20 AND 40
+AND Quantity%3 = 0
+ORDER BY Quantity ASC;
+
+Atividade 36:
+
+SELECT ProductID AS 'IDProduto',
+				Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE Quantity > 40
+AND OrderID > 700
+ORDER BY ProductID ASC;
+
+
+Atividade 37:
+
+SELECT ProductID AS 'IDProduto',
+				Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE ProductID%8 = 0
+AND OrderID < 400
+ORDER BY Quantity ASC;
+
+Atividade 38:
+
+SELECT OrderDetailID AS 'OrdemDetalhadaID',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE Quantity  > 15
+AND OrderDetailID LIKE '%4'
+ORDER BY OrderID ASC;
+
+Atividade 39:
+
+SELECT OrderDetailID AS 'OrdemDetalhadaID',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE ProductID BETWEEN 10 AND 20
+AND OrderID < 100
+ORDER BY OrderDetailID ASC;
+
+
+Atividade 40:
+
+SELECT ProductID AS 'IDProduto',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE ProductID%5 = 0
+AND Quantity < 30
+ORDER BY OrderID ASC;
+
+
+Atividade 41:
+
+SELECT ProductID AS 'IDProduto',
+					Quantity AS 'Quantidade',
+							OrderDetailID AS 'OrdemDetalhadaID'
+						  
+				
+FROM OrderDetails
+WHERE ProductID LIKE '%9'
+AND Quantity < 20
+ORDER BY OrderDetailID ASC;
+
+Atividade 42:
+
+SELECT ProductID AS 'IDProduto',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE OrderID%5 = 0
+AND ProductID BETWEEN 15 AND 30
+ORDER BY Quantity ASC;
+
+Atividade 43:
+
+SELECT OrderDetailID AS 'OrdemDetalhadaID',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE OrderDetailID%7 = 0
+AND Quantity BETWEEN 25 AND 50
+ORDER BY OrderID ASC;
+
+Atividade 44:
+
+SELECT ProductID AS 'IDProduto',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE OrderID < 250
+AND Quantity%6 = 0
+ORDER BY ProductID ASC;
+
+Atividade 45:
+
+SELECT OrderDetailID AS 'OrdemDetalhadaID',
+					Quantity AS 'Quantidade',
+							ProductID AS 'IDProduto'
+						  
+				
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 50 AND 150
+AND ProductID > 20
+ORDER BY Quantity ASC;
+
+Atividade 46:
+
+SELECT ProductID AS 'IDProduto',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE OrderID = 350
+AND Quantity > 30
+ORDER BY ProductID ASC;
+
+Atividade 47:
+
+SELECT OrderDetailID AS 'OrdemDetalhadaID',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE OrderDetailID%2 = 0
+AND ProductID LIKE '%0'
+ORDER BY OrderID ASC;
+
+Atividade 48:
+
+SELECT ProductID AS 'IDProduto',
+					Quantity AS 'Quantidade',
+							
+						  
+				
+FROM OrderDetails
+WHERE ProductID < 50
+AND Quantity BETWEEN 10 AND 25
+ORDER BY Quantity ASC;
+
+Atividade 49:
+
+SELECT OrderDetailID AS 'OrdemDetalhadaID',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE OrderID LIKE '%1'
+AND Quantity%5 = 0
+ORDER BY  OrderDetailID ASC;
+
+Atividade 50:
+
+SELECT OrderDetailID AS 'OrdemDetalhadaID',
+					Quantity AS 'Quantidade',
+							OrderID AS 'OrdemID'
+						  
+				
+FROM OrderDetails
+WHERE OrderDetailID > 300
+AND Quantity < 12
+ORDER BY  OrderID ASC;
