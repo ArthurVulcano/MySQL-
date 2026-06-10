@@ -2,7 +2,7 @@ Atividade 1:
 
 SELECT OrderDetailID AS 'OrdemDetalhada' 
 		    ProductID AS 'ProdutoID', 
-          Quantity AS 'Quantidade', 
+            Quantity AS 'Quantidade', 
 FROM OrderDetails
 WHERE Quantity > 15 
 AND ProductID > 10
@@ -28,18 +28,19 @@ ORDER BY Quantity ASC;
 Atividade 4:
 
 SELECT OrderDetailID AS 'OrdemDetalhadaID',
-					ProductID AS 'IDProduto'
+       ProductID AS 'IDProduto'
 FROM OrderDetails
 WHERE ProductID LIKE '%0'
-AND OrderDetailID > 50
-ORDER BY Quantity ASC;
+  AND OrderDetailID > 50
+ORDER BY OrderID ASC;
+
 Atividade 5:
 
 SELECT ProductID AS 'IDProduto', 
 			Quantity AS 'Quantidade', 
 					OrderID AS 'OrderID'
 FROM OrderDetails
-WHERE Quantity > 12
+WHERE Quantity < 12
 AND OrderID BETWEEN 100 AND 200
 ORDER BY ProductID ASC;
 
@@ -104,7 +105,7 @@ SELECT ProductID AS 'IDProduto',
 FROM OrderDetails
 WHERE Quantity > 10
 AND OrderID%3 = 0
-ORDER BY OrderDetailID ASC;
+ORDER BY OrderID ASC;
 
 Atividade 12:
 
@@ -235,6 +236,14 @@ ORDER BY ProductID ASC;
 
 Atividade 24:
 
+
+SELECT ProductID AS 'IDProduto',
+       OrderDetailID AS 'OrdemDetalhadaID',
+       Quantity AS 'Quantidade'
+FROM OrderDetails
+WHERE ProductID > 25
+  AND OrderDetailID % 3 = 0
+ORDER BY Quantity ASC;
 
 Atividade 25:
 
@@ -502,7 +511,7 @@ ORDER BY OrderID ASC;
 Atividade 48:
 
 SELECT ProductID AS 'IDProduto',
-					Quantity AS 'Quantidade',
+					Quantity AS 'Quantidade'
 							
 						  
 				
