@@ -98,7 +98,7 @@ Atividade 13:
 
 SELECT ContactName AS 'Nome',
 			City AS 'Cidade',
-            	Country AS 'Pais'
+            	Country AS 'Pais',
 					CustomerID AS 'ID'
 FROM Customers
 WHERE City LIKE 'P%'
