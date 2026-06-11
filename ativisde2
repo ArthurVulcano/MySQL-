@@ -1,7 +1,8 @@
 Atividade 1:
 
 SELECT CustomerName AS 'Nome'
-FROM Customers LIKE '%'
+FROM Customers 
+WHERE CustomerName LIKE '%'
 ORDER BY CustomerName ASC;
 
 Atividade 2:
@@ -29,7 +30,7 @@ SELECT ContactName AS 'NomeCLiente',
 FROM Customers
 WHERE Country LIKE '%a'
 AND ContactName LIKE 'a%'
-ORDER BY Country, City, ContactName ASC;
+ORDER BY Country, City;
 
 Atividade 5:
 
@@ -43,7 +44,7 @@ Atividade 6:
 SELECT CustomerName AS 'NomeCliente',
 					Country AS 'Pais'
 FROM Customers
-WHERE Country LIKE '%SA%'
+WHERE Country LIKE '%USA%'
 ORDER BY Country DESC;
 Atividade 7:
 
@@ -66,7 +67,7 @@ Atividade 9:
 SELECT CustomerName AS 'NomeCustomizado',
 				Country AS 'Pais'
 FROM Customers
-WHERE CustomerName NOT LIKE '%Shop%'
+WHERE CustomerName LIKE '%Shop%'
 ORDER BY Country ASC;
 
 Atividade 10:
@@ -91,16 +92,17 @@ SELECT ContactName AS 'Nome',
 			City AS 'Cidade'
 FROM Customers
 WHERE City LIKE '%Madrid%'
-ORDER BY ContactName DESC;
+ORDER BY ContactName ASC;
 
 Atividade 13:
 
 SELECT ContactName AS 'Nome',
 			City AS 'Cidade',
             	Country AS 'Pais'
+					CustomerID AS 'ID'
 FROM Customers
 WHERE City LIKE 'P%'
-ORDER BY Country  DESC;
+ORDER BY Country, CustomerID;
 
 Atividade 14:
 
@@ -244,7 +246,7 @@ SELECT CustomerName AS 'NomeCustomizado',
             Country AS 'Pais',
             City AS 'Cidade'
 FROM Customers
-WHERE  Country LIKE 'L%'
+WHERE  Country LIKE 'I%'
 ORDER BY City;
 
 Atividade 31:
@@ -297,7 +299,7 @@ SELECT CustomerName AS 'NomeCustomizado',
             Country AS 'Pais'
 FROM Customers
 WHERE Country LIKE 'BRAZ%'
-ORDER BY CustomerName,PostalCode;
+ORDER BY PostalCode, CustomerName ;
 
 Atividade 37:
 
@@ -333,7 +335,7 @@ SELECT CustomerName AS 'NomeCustomizado',
 			City AS 'Cidade',
             Country AS 'Pais'
 FROM Customers
-WHERE City LIKE 't%'
+WHERE City LIKE 'A%'
 ORDER BY CustomerName, Country ;
 
 Atividade 41:
@@ -350,7 +352,7 @@ SELECT CustomerName AS 'NomeCustomizado',
 			Country AS 'Pais'
 FROM Customers
 WHERE CustomerName LIKE '%GROUP%'
-ORDER BY Country DESC;
+ORDER BY Country ASC;
 
 Atividade 43:
 
@@ -402,7 +404,7 @@ SELECT  CustomerName AS 'NomeCustomizado',
 			ContactName AS 'Nome',
             Country AS 'Pais'
 FROM Customers
-WHERE CustomerName  LIKE 't%'
+WHERE CustomerName  LIKE 'C%'
 ORDER BY Country, ContactName ;
 
 Atividade 49:
